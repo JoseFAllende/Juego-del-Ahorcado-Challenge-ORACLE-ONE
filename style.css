@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(Ahorcado.jpg);
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: 0;
+  min-height: 93vh;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 24px;
+}
+
+.titulo h1 {
+  margin: 10px 0px 0px 0px;
+}
+
+.btns-inicio {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-iniciar {
+  width: 280px;
+  height: 67px;
+  border-radius: 30px;
+  margin: 30px;
+  font-size: 20px;
+  border: 3px solid rgb(59, 58, 58);
+  box-shadow: 20px 0px 30px -5px #1b1b1b;
+  cursor: pointer;
+}
+
+.btn-iniciar:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+}
+
+.btn-agregar {
+  width: 280px;
+  height: 67px;
+  border-radius: 30px;
+  margin: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 3px solid rgb(59, 58, 58);
+  box-shadow: 20px 0px 30px -5px #1b1b1b;
+}
+
+.btn-agregar:hover {
+  cursor: pointer;
+  background: greenyellow;
+}
+
+.palabra-nueva {
+  display: none;
+  width: 100%;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.campo {
+  width: auto;
+  height: 512px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-palabra-nueva {
+  height: 48px;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-size: 32px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.alerta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+  color: red;
+  opacity: 0.8;
+  font-size: 14px;
+  margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.alerta img {
+  width: 16px;
+  margin-right: 10px;
+  box-shadow: 20px 0px 30px -5px black;
+}
+
+.btn-guardar-empezar {
+  width: 280px;
+  height: 67px;
+  border-radius: 30px;
+  margin: 30px;
+  font-size: 20px;
+  border: 3px solid rgb(59, 58, 58);
+  box-shadow: 20px 0px 30px -5px #1b1b1b;
+  cursor: pointer;
+}
+
+.btn-guardar-empezar:hover {
+    cursor: pointer;
+    background: greenyellow;
+}
+
+.btn-cancelar {
+    width: 280px;
+    height: 67px;
+    border-radius: 30px;
+    margin: 30px;
+    font-size: 20px;
+    border: 3px solid rgb(59, 58, 58);
+    box-shadow: 20px 0px 30px -5px #1b1b1b;
+    cursor: pointer;
+}
+
+.btn-cancelar:hover {
+    cursor: pointer;
+    background: red;
+}
+
+.juego {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dibujo {
+  width: 294px;
+  height: 360px;
+}
+
+#dibujo {
+  margin-bottom: 30px;
+}
+
+.entrada-juego {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 464px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.letras {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 48px;
+  color: black;
+}
+
+.letra {
+  text-align: center;
+  width: 40px;
+}
+
+.lineas {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: black;
+}
+
+.linea {
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  border-radius: 8px;
+}
+
+.letras-no {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 24px;
+  color: black;
+  opacity: 0.8;
+}
+
+.letra-no {
+  padding: 0 5px;
+}
+
+.btns-juego {
+  display: inline-block;
+  text-align: center;
+  width: 100vw;
+  height: auto;
+}
+
+.btn-nuevojuego {
+    width: 280px;
+    height: 67px;
+    border-radius: 30px;
+    margin: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid rgb(59, 58, 58);
+    box-shadow: 20px 0px 30px -5px #1b1b1b;}
+
+.btn-nuevojuego:hover {
+    cursor: pointer;
+    background:greenyellow;}
+
+.btn-desistir {
+    width: 280px;
+    height: 67px;
+    border-radius: 30px;
+    margin: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid rgb(59, 58, 58);
+    box-shadow: 20px 0px 30px -5px #1b1b1b;}
+
+.btn-desistir:hover {
+    cursor: pointer;
+    background: red;
+}
+
+.mensaje {
+  margin: 20px;
+  font-size: 24px;
+}
+
+.derechos {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  bottom: 0;
+}
